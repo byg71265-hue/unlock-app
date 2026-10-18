@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unlock Account</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="notice-card">
+      <div class="notice-row">
+        <span class="alert-icon">!</span>
+        <p class="notice-text">Oops! Your account has been <strong>LOCKED</strong> due to multiple incorrect PIN tries. Unlock using the button below.</p>
+      </div>
+    </div>
+
+    <div class="unlock-box">
+      <label for="username">Username</label>
+      <input id="username" type="text" autocomplete="username" placeholder="Enter your username">
+
+      <button id="checkBtn" class="unlock-btn">UNLOCK ACCOUNT</button>
+      <p id="statusMsg" class="msg"></p>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+  </html>
