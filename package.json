@@ -1,0 +1,20 @@
+{
+  "name": "unlock-app",
+  "version": "1.0.0",
+  "description": "Account unlock flow: OTP via Telegram (dev) -> PIN login, backed by SQLite",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "better-sqlite3": "^11.3.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "express-rate-limit": "^7.4.0",
+    "cookie-session": "^2.1.0"
+  }
+}
