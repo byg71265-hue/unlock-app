@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enter PIN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="notice-card">
+      <div class="notice-row">
+        <span class="alert-icon">2</span>
+        <p class="notice-text">Enter your usual <strong>PIN</strong>. We'll then send a verification code to your Telegram.</p>
+      </div>
+    </div>
+
+    <div class="unlock-box">
+      <label for="pin">PIN</label>
+      <input id="pin" type="password" inputmode="numeric" autocomplete="current-password" placeholder="Enter your PIN">
+
+      <button id="pinBtn" class="unlock-btn">CONTINUE</button>
+      <p id="statusMsg" class="msg"></p>
+
+      <div id="linkBox" hidden>
+        <p>Telegram isn't linked yet. Open the link below and tap Start, then come back.</p>
+        <a id="telegramLink" target="_blank" rel="noopener">Open Telegram</a>
+        <button id="linkDoneBtn" class="unlock-btn secondary">I've linked it — continue</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+  </html>
